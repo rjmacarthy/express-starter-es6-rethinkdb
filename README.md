@@ -12,7 +12,8 @@ npm install
 npm start
 ```
 
-POST : 127.0.0.1:3000/api/model
-GET : 127.0.0.1:3000/api/model
+##### To do...
 
-Wow, it works!
+Hook up isomorphic react on the front end, and connect the store to socket.io.
+
+Write some tests.

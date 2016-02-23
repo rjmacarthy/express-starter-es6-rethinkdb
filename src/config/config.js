@@ -3,14 +3,18 @@ var glob = require('glob'),
 
 exports.config = {
     port: 3050,
-    rethinkPort : 28015,
     routes: './src/routes/**/*.js',
     models: './src/models/**/*.js',
-    title : 'express api boilerplate es6',
+    title: 'express api boilerplate es6',
     globFiles: function(location) {
         var files = glob.sync(location);
         var output = [];
         output = _.union(output, files);
         return output;
+    },
+    rethink: {
+        host: process.env.RDB_HOST || 'localhost',
+        port: parseInt(process.env.RDB_PORT || 28015),
+        db: process.env.RDB_DB || 'Test'
     }
 }

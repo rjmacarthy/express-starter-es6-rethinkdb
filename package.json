@@ -23,7 +23,9 @@
     "lodash": "^3.10.1",
     "mongoose": "^4.3.4",
     "morgan": "~1.6.1",
+    "rethinkdb": "^2.2.1",
     "serve-favicon": "~2.3.0",
+    "socket.io": "^1.4.5",
     "thinky": "^2.2.4"
   }
 }
